@@ -8,8 +8,8 @@ import '../../styles/acceuil.css'
 function Home() {
   return (
     <div>
-      <Banner>
-        <img src={Background} alt='' className='img-banner'/>
+      <Banner img={Background} >
+        {/* <img src={Background} alt='' className='img-banner'/> */}
       </Banner>
       <LogementList/>
     </div>

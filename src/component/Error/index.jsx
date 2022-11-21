@@ -30,13 +30,12 @@ export default function ErrorPage() {
       <Message>
         Oups! La page que vous demander n'exciste pas
       </Message>
+
       <NavLink to="/">
-      <Retour>
+        <Retour>
           Retouner sur la page d'accueil
         </Retour>
       </NavLink>
-        
-
 
     </PageError>
   );
