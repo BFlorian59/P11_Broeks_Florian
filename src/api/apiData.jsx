@@ -24,13 +24,13 @@ function Api() {
   useEffect(()=>{
     getData()
   },[])
-  return (
-    <div className="App">
-     {
-       data && data.length>0 && data.map((item)=><p>{item.about}</p>)
-     }
-    </div>
-  );
+  // return (
+  //   <div className="App">
+  //    {
+  //      data && data.length>0 && data.map((item)=><p>{item.about}</p>)
+  //    }
+  //   </div>
+  // );
 }
 
 export default Api;

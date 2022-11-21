@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {BrowserRouter, Route, Routes, createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Home from './page/Home'
 import Logement from './page/Logement'
 import Propos from './page/Propos'
 import Header from './component/Header'
 import Footer from './component/Footer'
 import ErrorPage from './component/Error'
-import App from './api/apiData'
+
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -18,10 +18,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/" element={<Home />} />
         <Route path="/Fiche-Logement" element={<Logement />} />
         <Route path="/A-Propos" element={<Propos />} />
-        <Route path="/" element={<Home />} errorElement={<ErrorPage />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
-   
   </React.StrictMode>
 );
 

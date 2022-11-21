@@ -1,16 +1,45 @@
 import { useRouteError } from "react-router-dom";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
+
+const Error = styled.h1`
+  font-size: 1050%;
+  color: #FF6060;
+  margin-bottom: auto;
+`
+const PageError =styled.div`
+  text-align: center;
+  color: #FF6060;
+`
+
+const Message =styled.h2`
+  color: #FF6060;
+`
+
+const Retour =styled.p`
+  color: #FF6060;
+`
+
 
 export default function ErrorPage() {
-  const error = useRouteError();
-  console.error(error);
+   return (
+    <PageError>
+      <Error>
+        404
+      </Error>
 
-  return (
-    <div id="error-page">
-      <h1>Oops!</h1>
-      <p>Sorry, an unexpected error has occurred.</p>
-      <p>
-        <i>{error.statusText || error.message}</i>
-      </p>
-    </div>
+      <Message>
+        Oups! La page que vous demander n'exciste pas
+      </Message>
+      <NavLink to="/">
+      <Retour>
+          Retouner sur la page d'accueil
+        </Retour>
+      </NavLink>
+        
+
+
+    </PageError>
   );
 }
