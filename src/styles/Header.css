@@ -16,4 +16,10 @@
 
 .Header-Accueil:focus, .Header-Propos:focus  {
     text-decoration: underline;
-  }
+}
+
+.Header-Accueil:active, .Header-Propos:active  {
+    text-decoration: underline;
+}
+
+

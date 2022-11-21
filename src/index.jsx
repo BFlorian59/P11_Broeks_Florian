@@ -7,6 +7,7 @@ import Propos from './page/Propos'
 import Header from './component/Header'
 import Footer from './component/Footer'
 import ErrorPage from './component/Error'
+import App from './api/apiData'
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
