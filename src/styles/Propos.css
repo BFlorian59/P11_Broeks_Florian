@@ -1,0 +1,40 @@
+.propos-cart{
+   width: 100%; 
+}
+
+.collapse{
+    width: 90%;
+    margin: auto;
+}
+
+.propos-cart-toggle-button{
+    display: flex;
+    width: 75%;
+    background-color: #FF6060;
+    border: none;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.propos-cart-toggle-button img{
+    margin-left: auto;
+    width: 2%;
+    margin-top: 2%;
+}
+
+.propos-cart-toggle-button h1{
+    color: white;
+    font-size: 115%
+}
+
+.collapse h2{
+    color: #FF6060;
+    background-color: #F6F6F6;
+    margin: auto;
+    width: 75%;
+    font-size: 124%;
+}
+
+.propos-cart, .propos-cart-closed{
+    margin-bottom: 3%;
+}

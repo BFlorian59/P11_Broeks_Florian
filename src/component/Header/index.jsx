@@ -1,28 +1,13 @@
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import { Link , NavLink } from 'react-router-dom'
 import LOGO from '../../assets/LOGO.png'
-import { NavLink } from "react-router-dom";
 import '../../styles/Header.css'
-
-
-const HomeLogo = styled.img`
-    width: 75%;
-    margin-left: 10%;
-`
-
-const NavContainer = styled.nav`
-  padding: 3%;
-  display: flex;
-  align-items: center;
-  `
 
 function Header() {
 
-
     return (
-        <NavContainer>
+        <nav>
             <Link to="/">
-                <HomeLogo src={LOGO} />
+                <img className='Header-img' src={LOGO} alt='logo' />
             </Link> 
             <div className = 'Header'>
                 <NavLink className='Header-Accueil' to="/">
@@ -31,11 +16,10 @@ function Header() {
                 <NavLink className='Header-Propos' to="/A-Propos">
                     A Propos
                 </NavLink> 
-            </div>
-               
-        </NavContainer>
+            </div>       
+        </nav>
     )
-  }
+}
   
   export default Header
   

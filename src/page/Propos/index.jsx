@@ -1,9 +1,19 @@
+import Banner from '../../component/Banner'
+import Background_propos from '../../assets/Background_propos.png'
+import Collapse from '../../component/Collapse'
+
+
+import '../../styles/acceuil.css'
+
 function Propos() {
-    return (
-      <div>
-        <h1> Page Propos 🏠</h1>
-      </div>
-    )
-  }
-  
-  export default Propos
+  return (
+    <div>
+      <Banner img={Background_propos} >
+        {/* <img src={Background} alt='' className='img-banner'/> */}
+      </Banner>
+      <Collapse/>
+    </div>
+  )
+}
+
+export default Propos

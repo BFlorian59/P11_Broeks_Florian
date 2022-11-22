@@ -1,42 +1,22 @@
-import styled from 'styled-components';
 import { NavLink } from "react-router-dom";
-
-const Error = styled.h1`
-  font-size: 1050%;
-  color: #FF6060;
-  margin-bottom: auto;
-`
-const PageError =styled.div`
-  text-align: center;
-  color: #FF6060;
-`
-
-const Message =styled.h2`
-  color: #FF6060;
-`
-
-const Retour =styled.p`
-  color: #FF6060;
-`
-
+import '../../styles/Error.css'
 
 export default function ErrorPage() {
    return (
-    <PageError>
-      <Error>
+    <div className="div-Error">
+      <h1 className="h1-Error">
         404
-      </Error>
+      </h1>
 
-      <Message>
+      <h2 className="h2-Error">
         Oups! La page que vous demander n'exciste pas
-      </Message>
+      </h2>
 
       <NavLink to="/">
-        <Retour>
+        <p className="p-Error">
           Retouner sur la page d'accueil
-        </Retour>
+        </p>
       </NavLink>
-
-    </PageError>
+    </div>
   );
 }
