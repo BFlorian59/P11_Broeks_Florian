@@ -1,7 +1,11 @@
+import '../../styles/Logementinfo.css'
+import LogementInfo from '../../component/Logementinfo'
+
 function Logement() {
     return (
       <div>
-        <h1> Page logement 🏠</h1>
+        <h1> Carousel</h1>
+        <LogementInfo/>
       </div>
     )
   }

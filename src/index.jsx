@@ -10,13 +10,14 @@ import ErrorPage from './component/Error'
 
 
 
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <Header/> 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Fiche-Logement" element={<Logement />} />
+        <Route path="logement/:id" element={<Logement />} />
         <Route path="/A-Propos" element={<Propos />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
