@@ -1,3 +1,25 @@
-.info-titre{
+.loge-info{
     display: flex;
+}
+
+.loge-titre {
+    margin-right: auto;
+}
+
+.loge-nom{
+    display: flex;
+}
+
+.loge-nom img{
+    width: 27%;
+    height: 51%;
+    border-radius: 40px;
+}
+
+.loge-tags{
+    display: flex;
+}
+
+.tag{
+    margin-right: auto;
 }
