@@ -6,11 +6,20 @@ import Flechehaut from '../../assets/Flechehaut.png';
 import CareScale from '../Rating'
 
 
-function LogementInfo(etoile_pleine , etoile ) {
+function LogementInfo() {
 
     const { id } = useParams();
 
     const logement = data.find(log => log.id === id);
+
+    const listetag = logement.tags.map((tag) =>
+        <li key={tag.toString()}>{tag}</li>
+    ) ;
+
+    const listeequipement = logement.equipments.map((equipment) =>
+        <li key={equipment.toString()}>{equipment}</li>
+    ) ;
+
     return(
         <div>
             <div className='loge-info'>
@@ -24,18 +33,16 @@ function LogementInfo(etoile_pleine , etoile ) {
                 </div>
             </div> 
             <div className='loge-tags'>
-                <p className='tag'>
-                    {logement.tags}
-                </p>
+                <ul className='tag'>
+                    {listetag}
+                </ul>
                 <CareScale careType='etoile_pleine' scaleValue={logement.rating} />
             </div>
             <div className='loge-collaspe'>
                 <Collapse h1="Description" img_enhaut ={Flechehaut} img={Flechebas} contenue={logement.description} />
-                <Collapse h1="Équipements" img_enhaut ={Flechehaut} img={Flechebas} contenue={<ul><li>{logement.equipments}</li></ul>} />
+                <Collapse h1="Équipements" img_enhaut ={Flechehaut} img={Flechebas} contenue={<ul className='listeequipement'>{listeequipement}</ul>} />
             </div>
         </div>
-        
-
     )  
 }
 
