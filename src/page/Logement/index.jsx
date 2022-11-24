@@ -1,6 +1,7 @@
 import '../../styles/Logementinfo.css'
 import LogementInfo from '../../component/Logementinfo'
 
+
 function Logement() {
     return (
       <div>

@@ -1,25 +1,83 @@
 .loge-info{
     display: flex;
+    margin-left: 5%;
+    margin-bottom: 2%;
 }
 
 .loge-titre {
     margin-right: auto;
+    color: #FF6060;
+}
+
+.loge-titre p, .loge-titre h1 {
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 
 .loge-nom{
     display: flex;
+    margin-top: -1%;
+    margin-right: 5%;
+    color: #FF6060;
+    height: 50%;
+    width: 13%;
+}
+
+.loge-nom p{
+    width: 43%;
+    margin-right: 7%;
 }
 
 .loge-nom img{
-    width: 27%;
-    height: 51%;
+    width: 50%;
+    height: 81%;
     border-radius: 40px;
+    margin: inherit;
 }
 
 .loge-tags{
     display: flex;
+    padding-left: 5%;
+    margin-bottom: 2%;
 }
 
 .tag{
     margin-right: auto;
+}
+
+.loge-collaspe{
+    display: flex;
+}
+
+.loge-collaspe .propos-cart-closed{
+    margin-bottom: 3%;
+    width: 100%;
+}
+
+.loge-collaspe .propos-cart-toggle-button {
+    width: 80%;
+}
+
+.loge-collaspe h2 {
+    color: #FF6060;
+    background-color: #F6F6F6;
+    margin: auto;
+    width: 80%;
+    font-size: 110%;
+    padding-top: 3%;
+}
+
+.rating{
+    margin: auto;
+    margin-right: 3%;
+}
+
+.rating img {
+    width: 15%;
+    margin-right: 2%;
+}
+
+.loge-collaspe img{
+    width: 5% !important;
+    margin-top: 3.5% !important;
 }

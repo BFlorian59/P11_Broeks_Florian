@@ -1,8 +1,12 @@
 import data from '../../data/data.json'
 import {useParams} from 'react-router-dom';
+import Collapse from '../../component/Collaspe';
+import Flechebas from '../../assets/Flechebas.png';
+import Flechehaut from '../../assets/Flechehaut.png';
+import CareScale from '../Rating'
 
 
-function LogementInfo() {
+function LogementInfo(etoile_pleine , etoile ) {
 
     const { id } = useParams();
 
@@ -23,7 +27,11 @@ function LogementInfo() {
                 <p className='tag'>
                     {logement.tags}
                 </p>
-                <p>Etoile</p>
+                <CareScale careType='etoile_pleine' scaleValue={logement.rating} />
+            </div>
+            <div className='loge-collaspe'>
+                <Collapse h1="Description" img_enhaut ={Flechehaut} img={Flechebas} contenue={logement.description} />
+                <Collapse h1="Équipements" img_enhaut ={Flechehaut} img={Flechebas} contenue={<ul><li>{logement.equipments}</li></ul>} />
             </div>
         </div>
         
