@@ -5,7 +5,6 @@ import Flechebas from '../../assets/Flechebas.png';
 import Flechehaut from '../../assets/Flechehaut.png';
 import CareScale from '../Rating'
 
-
 function LogementInfo() {
 
     const { id } = useParams();

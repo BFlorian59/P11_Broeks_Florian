@@ -1,15 +1,16 @@
 .Footer{
     background-color: black;
-    width: 100%;
+    width: 99%;
     text-align: center;
+    position: absolute;
 }
 
 .img-footer{
     width: 10%;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 .Titre{
     color: white;
-    font-size: 20%;
+    font-size: 90%;
 }
