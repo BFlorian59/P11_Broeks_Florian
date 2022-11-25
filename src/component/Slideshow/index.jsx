@@ -12,7 +12,7 @@ function Slideshow() {
 
     const logement = data.find(log => log.id === id);
 
-    const slide = [logement.pictures.length]
+    const slide = logement.pictures.length
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -28,9 +28,7 @@ function Slideshow() {
         setCurrentIndex(newIndex);
     };
 
-    console.log(slide)
-
-  return (
+  return slide > 1 ?(
     <div className='sliderStyles'>
         <div>
             <div className='leftArrowStyles' onClick={goToPrevious}>
@@ -47,7 +45,16 @@ function Slideshow() {
             <p>{currentIndex+1}/{slide}</p>
         </div>
     </div>
-  );
+  ):(
+    <div className='sliderStyles'>
+        <div className='slideStyles'>
+            <img className='carousel-image' src={logement.pictures[currentIndex]} alt="carousel"/>
+        </div>
+        <div className='dotsContainerStyles'>
+            <p>{currentIndex+1}/{slide}</p>
+        </div>
+    </div>
+  )
 };
 
 export default Slideshow
