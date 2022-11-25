@@ -1,11 +1,12 @@
 import '../../styles/Logementinfo.css'
 import LogementInfo from '../../component/Logementinfo'
+import Slideshow from '../../component/Slideshow'
 
 
 function Logement() {
     return (
       <div>
-        <h1> Carousel</h1>
+        <Slideshow />
         <LogementInfo/>
       </div>
     )
