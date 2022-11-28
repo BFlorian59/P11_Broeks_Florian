@@ -22,3 +22,14 @@
 .div-Error a{
     text-decoration: none;
 }
+
+@media screen and (max-width: 767px) {
+
+    .h2-Error {
+        margin-bottom: 33%;
+    }
+
+    .p-Error {
+        margin-bottom: 30%;
+    }
+}

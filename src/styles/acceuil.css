@@ -18,7 +18,6 @@ body{
     flex-grow: 1;
 }
 
-
 .acceuil-banner{
     margin-top: 5%;
     text-align: center;
@@ -26,6 +25,8 @@ body{
 
 .img-banner{
     width: 90%;
+    border-radius: 25px;
+    margin-bottom: 3%;
 }
 
 .list{
