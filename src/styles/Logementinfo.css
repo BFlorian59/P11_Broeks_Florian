@@ -19,26 +19,21 @@
     margin-top: -1%;
     margin-right: 5%;
     color: #FF6060;
-    height: 50%;
-    width: 13%;
+    height: 65%;
+    width: 100%;
+    margin-left: 0%;
 }
 
 .loge-nom p{
-    width: 43%;
-    margin-right: 7%;
+    width: 31%;
+    margin-left: 21%;
 }
 
 .loge-nom img{
-    width: 50%;
+    width: 25%;
     height: 81%;
     border-radius: 40px;
     margin: inherit;
-}
-
-.loge-tags{
-    display: flex;
-    padding-left: 5%;
-    margin-bottom: 2%;
 }
 
 .tag{
@@ -46,6 +41,7 @@
     display: flex;
     width: 80%;
     padding: 0%;
+    flex-wrap: wrap;
 }
 
 .tag li {
@@ -81,7 +77,9 @@
 
 .rating{
     margin: auto;
-    margin-right: 3%;
+    margin-right: 12%;
+    width: 65%;
+
 }
 
 .rating img {
@@ -103,3 +101,82 @@
     margin: 0%;
 }
 
+
+@media screen and (max-width: 767px) {
+
+    .loge-info{
+        display: block;
+        margin-left: 5%;
+        margin-bottom: 2%;
+    }
+
+    .loge-titre {
+        margin-right: auto;
+        width: 96%;
+    }
+
+    .loge-classement{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .loge-nom p {
+        width: 36%;
+        margin-left: 20%;
+        font-size: 80%;
+    }
+
+
+    .loge-nom {
+        margin-top: -1%;
+        margin-right: 0%; 
+        height: 65%;
+        width: 100%;
+        margin-left: 3%;
+        align-items: center;
+    }
+
+    .tag li {
+        font-size: 69%;
+        margin-bottom: 3%;
+    }
+
+    .loge-nom img {
+        width: 21%;
+        height: 81%;
+    }
+
+    .tag{
+        width: 80%;
+        padding: 0%;
+        flex-wrap: wrap;
+    }
+
+    .loge-collaspe {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .loge-collaspe .propos-cart-toggle-button {
+        width: 91%;
+        align-items: baseline;
+    }
+
+    .loge-collaspe h2 {
+        width: 85%;
+        font-size: 81%;
+        padding: 3%;
+    }
+
+    .loge-collaspe img {
+        width: 6% !important;
+        margin-top: 0% !important;
+    }
+
+    .loge-titre h1 {
+        font-size: 125%;
+    }
+    
+    
+}
+  

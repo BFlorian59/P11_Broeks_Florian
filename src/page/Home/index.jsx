@@ -7,7 +7,7 @@ import '../../styles/acceuil.css'
 
 function Home() {
   return (
-    <div>
+    <div className='content'>
       <Banner img={Background} >
         {/* <img src={Background} alt='' className='img-banner'/> */}
       </Banner>

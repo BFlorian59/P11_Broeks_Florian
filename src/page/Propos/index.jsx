@@ -10,7 +10,7 @@ import '../../styles/acceuil.css'
 
 function Propos() {
   return (
-    <div>
+    <div className='content'>
       <Banner img={Background_propos} >
       </Banner>
       <div className='collapse'>

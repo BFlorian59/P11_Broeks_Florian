@@ -5,7 +5,7 @@ import Slideshow from '../../component/Slideshow'
 
 function Logement() {
     return (
-      <div>
+      <div className='content'>
         <Slideshow />
         <LogementInfo/>
       </div>

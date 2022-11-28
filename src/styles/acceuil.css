@@ -1,5 +1,21 @@
+html, body{
+    height: 100%;
+}
+
+
 body{
-	font-family: 'Montserrat', sans-serif !important;
+	font-family: 'Montserrat', normal !important;
+    margin: 0;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content{
+    flex-grow: 1;
 }
 
 
@@ -68,4 +84,30 @@ body{
 
 .card a{
 	text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+
+    .logement-list {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .list {
+        background-color: white;
+        width: 100%;
+    }
+
+    .logement-item {
+        border-radius: 10px;
+        width: 90%;
+        height: 255px;
+    }
+
+    .image {
+        border-radius: 10px;
+    }
 }

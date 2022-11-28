@@ -25,17 +25,17 @@ function LogementInfo() {
                 <div className='loge-titre'>
                     <h1>{logement.title}</h1>
                     <p>{logement.location}</p>
+                    <ul className='tag'>
+                        {listetag}
+                    </ul>
                 </div>
-                <div className='loge-nom'>
-                    <p>{logement.host.name}</p>
-                    <img src={logement.host.picture} alt=''></img>
-                </div>
-            </div> 
-            <div className='loge-tags'>
-                <ul className='tag'>
-                    {listetag}
-                </ul>
-                <CareScale careType='etoile_pleine' scaleValue={logement.rating} />
+                <div className='loge-classement'>
+                    <div className='loge-nom'>
+                        <p>{logement.host.name}</p>
+                        <img src={logement.host.picture} alt=''></img>
+                    </div> 
+                    <CareScale careType='etoile_pleine' scaleValue={logement.rating} />
+                </div>        
             </div>
             <div className='loge-collaspe'>
                 <Collapse h1="Description" img_enhaut ={Flechehaut} img={Flechebas} contenue={logement.description} />

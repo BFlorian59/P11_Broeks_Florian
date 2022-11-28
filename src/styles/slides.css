@@ -26,7 +26,6 @@
   
 .sliderStyles {
     position: relative;
-    height: 100%;
     margin-bottom: 5%;
   }
   
@@ -43,7 +42,41 @@
     font-size: 20px;
   }
 
-  .carousel-image{
+  .carousel-image {
     width: 100%;
     height: 100%;
+    border-radius: 25px;
+}
+
+
+@media screen and (max-width: 767px) {
+
+  .sliderStyles {
+    margin-top: 5%;
   }
+
+
+  .slideStyles {
+    height: 255px;
+  }
+
+  .fleche_droite{
+    width: 30%;
+  }
+
+  .fleche_gauche{
+    width: 30%;
+  }
+
+  .rightArrowStyles  {
+    right: 0%;
+  }
+
+  .carousel-image {
+    border-radius: 10px;
+  }
+
+  .dotsContainerStyles {
+    margin-top: -13%;
+  }
+}
