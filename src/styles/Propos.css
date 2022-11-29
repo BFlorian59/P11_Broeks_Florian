@@ -16,25 +16,28 @@
     border: none;
     margin: auto;
     border-radius: 5px;
+    align-items: baseline;
 }
 
 .propos-cart-toggle-button img{
     margin-left: auto;
+    margin-right: 3%;
     width: 2%;
-    margin-top: 2%;
 }
 
 .propos-cart-toggle-button h1{
     color: white;
-    font-size: 115%
+    font-size: 132%;
+    margin-left: 2%;
 }
 
 .collapse h2{
     color: #FF6060;
     background-color: #F6F6F6;
     margin: auto;
-    width: 75%;
+    width: 71%;
     font-size: 124%;
+    padding: 2%;
 }
 
 .propos-cart, .propos-cart-closed{
