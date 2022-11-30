@@ -11,7 +11,8 @@ function LogementInfo() {
 
     const logement = data.find(log => log.id === id);
 
-    const listetag = logement.tags.map((tag) =>
+ 
+   const listetag = logement.tags.map((tag) =>
         <li key={tag.toString()}>{tag}</li>
     ) ;
 
@@ -19,7 +20,7 @@ function LogementInfo() {
         <li key={equipment.toString()}>{equipment}</li>
     ) ;
 
-    return(
+    return (
         <div>
             <div className='loge-info'>
                 <div className='loge-titre'>
@@ -42,7 +43,7 @@ function LogementInfo() {
                 <Collapse h1="Équipements" img_enhaut ={Flechehaut} img={Flechebas} contenue={<ul className='listeequipement'>{listeequipement}</ul>} />
             </div>
         </div>
-    )  
+    )
 }
 
 

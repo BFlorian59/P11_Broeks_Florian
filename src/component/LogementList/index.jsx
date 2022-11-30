@@ -2,8 +2,10 @@ import data from '../../data/data.json'
 import LogementItem from '../LogementItems'
 import {Link} from 'react-router-dom';
 
+
+
 function LogementList() {
-  
+
 	return (
 		<div className='list'>
 			<ul className='logement-list'>
