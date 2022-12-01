@@ -11,7 +11,7 @@
 
 .Header{
     margin-left: auto;
-    width: 19%;
+    width: 22%;
 }
 
 .Header-Accueil:focus, .Header-Propos:focus  {
@@ -25,8 +25,8 @@
 
 
 .Header-img{
-    width: 75%;
-    margin-left: 10%;
+    width: 100%;
+    margin-left: 28%;
 }
 
 nav{

@@ -1,8 +1,8 @@
 .slideStyles  {
-    width: 90%;
+    width: 87%;
     height: 544px;
     margin: auto;
-  }
+}
   
 .rightArrowStyles  {
     position: absolute;
@@ -58,6 +58,7 @@
 
   .slideStyles {
     height: 255px;
+    width: 90%;
   }
 
   .fleche_droite{
