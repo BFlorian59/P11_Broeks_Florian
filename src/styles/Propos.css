@@ -1,4 +1,12 @@
-
+.background_propos{
+    background-image: url("../assets/Background_propos.png");
+    height:223px;
+    margin: auto;
+    width: 86%;
+    background-repeat: no-repeat;
+    margin-bottom: 5%;
+    border-radius: 25px;
+}
 
 .propos-cart{
    width: 100%; 
@@ -7,6 +15,7 @@
 .collapse{
     width: 90%;
     margin: auto;
+    margin-bottom: 10%;
 }
 
 .propos-cart-toggle-button{
@@ -45,6 +54,16 @@
 }
 
 @media screen and (max-width: 767px) {
+
+    .background_propos{
+        background-image: url("../assets/Background_propos_m.png");
+        height: 224px;
+        margin: auto;
+        width: 90%;
+        background-repeat: no-repeat;
+        margin-bottom: 5%;
+        border-radius: 10px;
+    }
     
     .propos-cart-toggle-button {    
         width: 100%;

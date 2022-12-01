@@ -9,9 +9,15 @@ body{
 }
 
 #root{
-    display: flex;
-    flex-direction: column;
     height: 100%;
+}
+
+.background{
+    background-image: url("../assets/background.png");
+    height: 238px;
+    margin: auto;
+    width: 86%;
+    background-repeat: no-repeat;
 }
 
 .content{
@@ -30,8 +36,8 @@ body{
 }
 
 .list{
-	background-color: #F6F6F6;
-	width: 90%;
+    background-color: #F6F6F6;
+    width: 86%;
     margin: auto;
     border-radius: 20px;
 }
@@ -91,10 +97,12 @@ body{
 
 @media screen and (max-width: 767px) {
 
-
-    .img-banner {
-        border-radius: 10px;
-        height: 80px;
+    .background{
+        background-image: url("../assets/background_mobile.png");
+        height: 111px;
+        margin: auto;
+        width: 90%;
+        background-repeat: no-repeat;
     }
 
     .logement-list {

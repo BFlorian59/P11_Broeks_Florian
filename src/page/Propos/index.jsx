@@ -1,5 +1,3 @@
-import Banner from '../../component/Banner'
-import Background_propos from '../../assets/Background_propos.png'
 import Collapse from '../../component/Collaspe'
 import Flechebas from '../../assets/Flechebas.png'
 import Flechehaut from '../../assets/Flechehaut.png'
@@ -11,8 +9,7 @@ import '../../styles/acceuil.css'
 function Propos() {
   return (
     <div className='content'>
-      <Banner img={Background_propos} >
-      </Banner>
+      <p className='background_propos'></p>
       <div className='collapse'>
         <Collapse h1="Fiabilité" img_enhaut ={Flechehaut} img={Flechebas} contenue="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." />
         <Collapse h1="Respect" img_enhaut ={Flechehaut} img={Flechebas} contenue="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />
