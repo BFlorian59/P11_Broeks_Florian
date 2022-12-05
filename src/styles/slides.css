@@ -1,7 +1,7 @@
 .slideStyles  {
-    width: 87%;
-    height: 544px;
-    margin: auto;
+  width: 100%;
+  height: 94%;
+  margin: auto;
 }
   
 .rightArrowStyles  {
@@ -25,9 +25,13 @@
   }
   
 .sliderStyles {
-    position: relative;
-    margin-bottom: 5%;
-  }
+  position: relative;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 5%;
+  height: 30rem;
+
+ }
   
 .dotsContainerStyles{
     display: flex;
@@ -46,6 +50,8 @@
     width: 100%;
     height: 100%;
     border-radius: 25px;
+    object-position: center;
+    object-fit: cover;
 }
 
 
@@ -53,6 +59,7 @@
 
   .sliderStyles {
     margin-top: 5%;
+    height: 17rem;
   }
 
 
