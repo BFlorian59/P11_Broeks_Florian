@@ -21,7 +21,6 @@
     margin-top: -1%;
     margin-right: 5%;
     color: #FF6060;
-    height: 52%;
     width: 100%;
     margin-left: 0%;
 }
@@ -58,6 +57,7 @@
     background-color: #FF6060;
     padding: 1% 4% 1% 4%;
     border-radius: 10px;
+    margin-top: 1%;
 }
 
 .loge-collaspe{
